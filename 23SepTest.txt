@@ -35,3 +35,38 @@ In call by reference, instead of passing a copy of the value, a reference (or me
 
 
 
+10. Create a Class rectangle which has friend class as Area. Using friend function, calculate the area of rectangle.
+   
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Rectangle{
+    private:
+        float len;
+        float wid;
+        
+    public:
+        Rectangle(float a, float b){
+            len=a;
+            wid=b;
+        }
+        
+        friend class Area;
+};
+
+class Area{
+    public:
+        float solution(Rectangle result){
+            return result.len * result.wid;
+        }
+};
+int main(){
+    
+   Rectangle obj(2.0, 7.2);
+   Area obj2;
+   cout<<obj2.solution(obj);
+   return 0;+
+
+}

@@ -1,0 +1,33 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class CustomString{
+    private:
+        string data;
+        
+    public:
+        CustomString(string str = ""){
+            data = str;
+        }
+        CustomString operator+(const CustomString & obj){
+            CustomString result;
+            result.data = data + obj.data;
+            return result;
+        }
+        
+        string get(){
+            return data;
+        }
+};
+
+int main(){
+    
+    CustomString obj1("sameer");
+    CustomString obj2("khan");
+    
+    CustomString result = obj1 + obj2;
+    
+    cout<<result.get();
+    
+}
