@@ -1,0 +1,37 @@
+5.What is the difference between array and linked list.
+
+An array is of fixed size, while the size of the linked list is dynamic. An array stores the data at contiguous memory allocation, whereas a linked list stores the data at disparate memory allocations.
+
+
+6. What is difference between Primitive and Non primitive data structures.
+
+Primitive data structures are simple and predefined types like integers and booleans, used for basic data storage, whereas non-primitive structures like arrays and lists are more complex, designed for organizing collections of data and enabling advanced data manipulation.
+primitive store single value like int,float,char . 
+Non primate Data structure  store multiple and complex sets of data. example - arrays,list,class etc.
+
+7.How to do constructor calling, how many different types of constructors are there
+A constructor is a special type of function in object-oriented programming (OOP) that is automatically called when an object is created from a class. Its primary purpose is to initialize objects and allocate memory for them. 
+
+Types of Constructors
+
+1. Default Constructor : no arguments and  initializes the object with default values
+2. Parameterized Constructor :take arguments
+3. Copy Constructor
+Definition: A constructor that creates a new object as a copy of an existing object. It takes a reference to another object of the same class as its argument.
+
+
+
+
+8.What is the difference between overloading and overriding of functions.
+Function overloading occurs when multiple functions in the same scope have the same name but different parameters (either in number, type, or both). The compiler decides which function to call based on the argument list at compile time. This is a feature of compile-time polymorphism. 
+ Function overriding occurs when a derived (or child) class provides a specific implementation of a function that is already defined in its base  class. This is an example of runtime polymorphism.
+
+
+
+9.What is the difference between call by value and call by reference.
+In call by value, a copy of the actual argument value is passed to the function. The function works with this copy, and any changes made to the parameter inside the function do not affect the original variable.
+
+In call by reference, instead of passing a copy of the value, a reference (or memory address) to the actual argument is passed to the function. As a result, any changes made to the parameter inside the function do affect the original variable outside the function.
+
+
+
